@@ -7,15 +7,16 @@
 import Foundation
 import SwiftUI
 
-struct Book
+struct Book: Identifiable
 {
-    var id = UUID()
-    var image: String
-    var authors: String
-    var title: String
-    var edition: String
-    var description: String
-    var categories: [String]
-    var price: Double
+    let id = UUID()
+    var image: String = ""
+    var authors: String =""
+    var title: String = ""
+    var edition: String = ""
+    var description: String = ""
+    var categories: [String] = ""
+    var price: Double = ""
+    
     
 }
