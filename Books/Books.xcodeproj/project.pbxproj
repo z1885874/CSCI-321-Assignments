@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB1B177A28E8D8BE00EA0D9A /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B177928E8D8BE00EA0D9A /* BookModel.swift */; };
 		DB6F62F528E633B500FFAC57 /* BooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F62F428E633B500FFAC57 /* BooksApp.swift */; };
 		DB6F62F728E633B500FFAC57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F62F628E633B500FFAC57 /* ContentView.swift */; };
 		DB6F62F928E633B600FFAC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6F62F828E633B600FFAC57 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB1B177928E8D8BE00EA0D9A /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		DB6F62F128E633B500FFAC57 /* Books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Books.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6F62F428E633B500FFAC57 /* BooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksApp.swift; sourceTree = "<group>"; };
 		DB6F62F628E633B500FFAC57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				DB6F62F428E633B500FFAC57 /* BooksApp.swift */,
 				DB6F62F628E633B500FFAC57 /* ContentView.swift */,
+				DB1B177928E8D8BE00EA0D9A /* BookModel.swift */,
 				DB6F62F828E633B600FFAC57 /* Assets.xcassets */,
 				DB6F62FA28E633B600FFAC57 /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1B177A28E8D8BE00EA0D9A /* BookModel.swift in Sources */,
 				DB6F62F728E633B500FFAC57 /* ContentView.swift in Sources */,
 				DB6F62F528E633B500FFAC57 /* BooksApp.swift in Sources */,
 			);
