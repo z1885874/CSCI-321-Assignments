@@ -22,8 +22,10 @@ struct ContentView: View {
                     .offset(y:-25)
                     .padding()
                     .foregroundColor(.accentColor)
-                Text(book.authors)
-                Text("Hello, world!")
+                    .padding()
+                
+                Text("Book.authors")
+                
             }
             .padding()
         }
