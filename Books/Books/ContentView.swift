@@ -12,8 +12,8 @@ import SwiftUI
 struct ContentView: View {
     let Book = bookData
     var body: some View {
-        ScrollView{
-            VStack{
+        ScrollView{ //vertical stack that
+            VStack{ //allows scrolling
                 Image("Image")
                     .resizable()
                     .cornerRadius(25)
@@ -24,20 +24,17 @@ struct ContentView: View {
                     .offset(y:-25)
                     .foregroundColor(.accentColor)
                     .padding()
-                
+//access the bookdata file to output the //date
                 Text(Book.authors)
-                Text(Book.title)
-                Text(Book.edition)
+                    .foregroundColor(Color.gray)
+                Text(Book.title).font(.headline).bold()
+                Text(Book.edition).font(.subheadline)
                 Text(Book.description)
-                HStack{
-                    ForEach(Book.categories){
-                        
-                    }
-                }
+                    .foregroundColor(Color.gray)
+                
             }
-           
-            .padding()
         }
+        .padding()
     }
 }
 

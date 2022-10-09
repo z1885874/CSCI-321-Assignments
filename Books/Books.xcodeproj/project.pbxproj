@@ -13,9 +13,6 @@
 		DB6F62F728E633B500FFAC57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F62F628E633B500FFAC57 /* ContentView.swift */; };
 		DB6F62F928E633B600FFAC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6F62F828E633B600FFAC57 /* Assets.xcassets */; };
 		DB6F62FC28E633B600FFAC57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6F62FB28E633B600FFAC57 /* Preview Assets.xcassets */; };
-		DB6F630628E633B600FFAC57 /* BooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F630528E633B600FFAC57 /* BooksTests.swift */; };
-		DB6F631028E633B600FFAC57 /* BooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F630F28E633B600FFAC57 /* BooksUITests.swift */; };
-		DB6F631228E633B600FFAC57 /* BooksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F631128E633B600FFAC57 /* BooksUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +41,7 @@
 		DB6F62F828E633B600FFAC57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB6F62FB28E633B600FFAC57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB6F630128E633B600FFAC57 /* BooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB6F630528E633B600FFAC57 /* BooksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTests.swift; sourceTree = "<group>"; };
 		DB6F630B28E633B600FFAC57 /* BooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB6F630F28E633B600FFAC57 /* BooksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksUITests.swift; sourceTree = "<group>"; };
-		DB6F631128E633B600FFAC57 /* BooksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				DB6F62F328E633B500FFAC57 /* Books */,
-				DB6F630428E633B600FFAC57 /* BooksTests */,
-				DB6F630E28E633B600FFAC57 /* BooksUITests */,
 				DB6F62F228E633B500FFAC57 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,8 +92,6 @@
 			children = (
 				DB6F62F428E633B500FFAC57 /* BooksApp.swift */,
 				DB6F62F628E633B500FFAC57 /* ContentView.swift */,
-				DB1B177928E8D8BE00EA0D9A /* BookModel.swift */,
-				DB1B177B28EA295A00EA0D9A /* BookData.swift */,
 				DB6F62F828E633B600FFAC57 /* Assets.xcassets */,
 				DB6F62FA28E633B600FFAC57 /* Preview Content */,
 			);
@@ -112,25 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				DB6F62FB28E633B600FFAC57 /* Preview Assets.xcassets */,
+				DB1B177B28EA295A00EA0D9A /* BookData.swift */,
+				DB1B177928E8D8BE00EA0D9A /* BookModel.swift */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		DB6F630428E633B600FFAC57 /* BooksTests */ = {
-			isa = PBXGroup;
-			children = (
-				DB6F630528E633B600FFAC57 /* BooksTests.swift */,
-			);
-			path = BooksTests;
-			sourceTree = "<group>";
-		};
-		DB6F630E28E633B600FFAC57 /* BooksUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DB6F630F28E633B600FFAC57 /* BooksUITests.swift */,
-				DB6F631128E633B600FFAC57 /* BooksUITestsLaunchTests.swift */,
-			);
-			path = BooksUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB6F630628E633B600FFAC57 /* BooksTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB6F631028E633B600FFAC57 /* BooksUITests.swift in Sources */,
-				DB6F631228E633B600FFAC57 /* BooksUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
