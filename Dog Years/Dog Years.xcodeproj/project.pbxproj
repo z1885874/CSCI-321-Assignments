@@ -11,9 +11,7 @@
 		3374558528F3798B00BA3B05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3374558428F3798B00BA3B05 /* ContentView.swift */; };
 		3374558728F3798E00BA3B05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3374558628F3798E00BA3B05 /* Assets.xcassets */; };
 		3374558B28F3798E00BA3B05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3374558A28F3798E00BA3B05 /* Preview Assets.xcassets */; };
-		3374559228F379DE00BA3B05 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3374559128F379DE00BA3B05 /* dog.jpg */; };
-		3374559428F379F000BA3B05 /* dog-age-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 3374559328F379F000BA3B05 /* dog-age-1024.png */; };
-		3374559628F38B1E00BA3B05 /* RujisHandwritingFontV20-vrqZ.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3374559528F38B1E00BA3B05 /* RujisHandwritingFontV20-vrqZ.ttf */; };
+		DB97E28128F496AF0089C4B6 /* DogYearViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB97E28028F496AF0089C4B6 /* DogYearViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,10 +21,8 @@
 		3374558628F3798E00BA3B05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3374558828F3798E00BA3B05 /* Dog_Years.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dog_Years.entitlements; sourceTree = "<group>"; };
 		3374558A28F3798E00BA3B05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3374559128F379DE00BA3B05 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dog.jpg; path = "../../../Downloads/Assignment 2 Image Resources/dog.jpg"; sourceTree = "<group>"; };
-		3374559328F379F000BA3B05 /* dog-age-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dog-age-1024.png"; path = "../../../Downloads/Assignment 2 Image Resources/dog-age-1024.png"; sourceTree = "<group>"; };
-		3374559528F38B1E00BA3B05 /* RujisHandwritingFontV20-vrqZ.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RujisHandwritingFontV20-vrqZ.ttf"; path = "../../../Downloads/rujis-handwriting-font-v20/RujisHandwritingFontV20-vrqZ.ttf"; sourceTree = "<group>"; };
 		3374559828F38E6100BA3B05 /* RujisHandwritingFontV20-vrqZ.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RujisHandwritingFontV20-vrqZ.ttf"; sourceTree = "<group>"; };
+		DB97E28028F496AF0089C4B6 /* DogYearViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogYearViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +57,9 @@
 			children = (
 				3374559728F38E3C00BA3B05 /* Font */,
 				3374558228F3798B00BA3B05 /* Dog_YearsApp.swift */,
+				DB97E28028F496AF0089C4B6 /* DogYearViewModel.swift */,
 				3374558428F3798B00BA3B05 /* ContentView.swift */,
 				3374558628F3798E00BA3B05 /* Assets.xcassets */,
-				3374559528F38B1E00BA3B05 /* RujisHandwritingFontV20-vrqZ.ttf */,
-				3374559328F379F000BA3B05 /* dog-age-1024.png */,
-				3374559128F379DE00BA3B05 /* dog.jpg */,
 				3374558828F3798E00BA3B05 /* Dog_Years.entitlements */,
 				3374558928F3798E00BA3B05 /* Preview Content */,
 			);
@@ -146,11 +140,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3374559228F379DE00BA3B05 /* dog.jpg in Resources */,
-				3374559628F38B1E00BA3B05 /* RujisHandwritingFontV20-vrqZ.ttf in Resources */,
 				3374558B28F3798E00BA3B05 /* Preview Assets.xcassets in Resources */,
 				3374558728F3798E00BA3B05 /* Assets.xcassets in Resources */,
-				3374559428F379F000BA3B05 /* dog-age-1024.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB97E28128F496AF0089C4B6 /* DogYearViewModel.swift in Sources */,
 				3374558528F3798B00BA3B05 /* ContentView.swift in Sources */,
 				3374558328F3798B00BA3B05 /* Dog_YearsApp.swift in Sources */,
 			);
@@ -219,6 +211,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,6 +264,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;

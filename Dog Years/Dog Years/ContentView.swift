@@ -7,9 +7,10 @@
 
 import SwiftUI
 import UIKit
+import Foundation
 
 struct ContentView: View {
-    @State private var dogYears: String = "1"
+    @State private var dogYears: String = ""
     var body: some View {
         ZStack {
             Rectangle()
@@ -22,7 +23,7 @@ struct ContentView: View {
                     .foregroundColor(.white)
                 Spacer()
                 //TextField("Enter your dog's age", text: $dogYears)
-                //    .backgroundStyle(<#T##style: ShapeStyle##ShapeStyle#>)
+                //    .backgroundStyle(T##style: ShapeStyle##ShapeStyle)
                 TextField("Enter your score", text: $dogYears)
                     .textFieldStyle(.roundedBorder)
                     .keyboardType(.numbersAndPunctuation)
@@ -40,7 +41,6 @@ struct ContentView: View {
         }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
