@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 
 struct ContentView: View {
-    @State private var dogYears: String = ""
+    @StateObject private var viewModel = DogAgeCalculator()
     var body: some View {
         ZStack {
             Rectangle()
@@ -24,7 +24,7 @@ struct ContentView: View {
                 Spacer()
                 //TextField("Enter your dog's age", text: $dogYears)
                 //    .backgroundStyle(T##style: ShapeStyle##ShapeStyle)
-                TextField("Enter your score", text: $dogYears)
+                TextField("Enter your score", text: $viewModel.dogYears)
                     .textFieldStyle(.roundedBorder)
                     .keyboardType(.numbersAndPunctuation)
                     .padding()
@@ -36,6 +36,15 @@ struct ContentView: View {
                     .shadow(radius: 10)
                     .overlay(Circle().stroke(Color.white))
                 Spacer()
+                Button(action: {
+                    viewModel.compute(operation: "log")
+                }, label: {
+                   Text("Human Age")
+                })
+                .frame(width: 100, height: 50)
+                .background(Color.white)
+                .cornerRadius(12)
+                Text(viewModel.resultText)
                 
             }
         }

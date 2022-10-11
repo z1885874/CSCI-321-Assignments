@@ -9,7 +9,7 @@ import Foundation
 
 class DogAgeCalculator: ObservableObject{
     @Published var dogYears = ""
-    @Published var results = "0.00"
+    @Published var resultText = "0.00"
     
     @Published var errorMessage = ""
     @Published var showAlert = false
@@ -21,5 +21,12 @@ class DogAgeCalculator: ObservableObject{
             return
         }
         var result: Double
+        switch operation {
+        default:
+            result = 16*log(number)+31
+        }
+        resultText = String(format:"%.2f", "In human years, your dog is ", result)
+        
     }
+  
 }
