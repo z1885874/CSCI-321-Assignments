@@ -25,7 +25,7 @@ class DogAgeCalculator: ObservableObject{
         default:
             result = 16*log(number)+31
         }
-        resultText = String(format:"%.2f", "In human years, your dog is ", result)
+        resultText = String(format:"%.2f", result)
         
     }
   
