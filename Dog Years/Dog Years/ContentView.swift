@@ -44,9 +44,19 @@ struct ContentView: View {
                 .frame(width: 100, height: 50)
                 .background(Color.white)
                 .cornerRadius(12)
-                Text(viewModel.resultText)
+                HStack{
+                    Text("In human years, your dog is ")
+                    Text(viewModel.resultText)
+                    
+                }
                 
             }
+        }
+        .alert(isPresented: $viewModel.showAlert) {
+            Alert(
+                title: Text("Error"),
+                message: Text(viewModel.errorMessage)
+            )
         }
     }
 }

@@ -9,7 +9,7 @@ import Foundation
 
 class DogAgeCalculator: ObservableObject{
     @Published var dogYears = ""
-    @Published var resultText = "0.00"
+    @Published var resultText = ""
     
     @Published var errorMessage = ""
     @Published var showAlert = false
